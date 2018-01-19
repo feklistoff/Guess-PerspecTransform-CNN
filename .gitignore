@@ -1,0 +1,13 @@
+.ipynb_checkpoints
+
+.idea
+
+data_train/
+
+data_test/
+
+__pycache__
+
+
+stuff
+
