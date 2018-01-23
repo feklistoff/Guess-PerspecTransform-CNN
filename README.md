@@ -24,10 +24,10 @@ The model takes a picture of some arbitrary page that was randomly distorted usi
 
 ## Results
 * Developed dataset generation pipeline that meets the requirements
-* Built a model that predicts transformation's destination points
+* Built a model that predicts transformation's destination points:
+  * The model was trained for 7 epochs for 9000 samples each
+  * The model achieved overall average accuracy of prediction at about ±10 pixels along each axis
 * Visualised the results using function that takes as an input predicted angle and rotates the whole picture back
-* TODO: try using STNs for better perfomance
-
 
 ## Dependencies
 Virtual environment can be created using `conda` from `environment.yml` file:
