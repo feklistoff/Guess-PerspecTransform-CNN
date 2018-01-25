@@ -23,11 +23,14 @@ The model takes a picture of some arbitrary page that was randomly distorted usi
 * Visualize the result
 
 ## Results
-* Developed dataset generation pipeline that meets the requirements
-* Built a model that predicts transformation's destination points:
+* Developed [dataset generation](https://github.com/feklistoff/Guess-PerspecTransform-CNN/blob/master/dataset_generator.ipynb) pipeline that meets the requirements
+* Built a model that predicts transformation's destination points ([check here](https://github.com/feklistoff/Guess-PerspecTransform-CNN/blob/master/model.ipynb)):
   * The model was trained for 7 epochs for 9000 samples each
-  * The model achieved overall average accuracy of prediction at about ±10 pixels along each axis
+  * The model achieved overall average accuracy of prediction at about **±10 pixels** along each axis
 * Visualised the results using function that takes as an input predicted angle and rotates the whole picture back
+* Added a [python file](https://github.com/feklistoff/Guess-PerspecTransform-CNN/blob/master/model.py) that utilizes previously trained model and can be used to undistort provided pictures, usage `python model.py /path/to/image`
+
+<img src="result.png" width="900px">
 
 ## Dependencies
 Virtual environment can be created using `conda` from `environment.yml` file:
